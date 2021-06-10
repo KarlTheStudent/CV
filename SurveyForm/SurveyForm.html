@@ -1,18 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 id="title">Future Food Growers Survey Form</h1>
-    <p id = "description">Your responses will help us make gardening accessible to all</p>
-    <form action="" id="survey-form">
-       <label for="name">Name</label> <input id="name" type="text" placeholder="Enter your name">
-       <label for="email">Email</label> <input id = "email" type="text">
-       
-    </form>
-</body>
+  <head>
+    <link rel="icon" type="image/png" href="Carrot.png" />
+    <link rel="stylesheet" href="survey.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Architects Daughter', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Shadows Into Light', cursive;-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Food Growers</title>
+  </head>
+  <body>
+    <a id="homelink" href="\index.html">Home</a>
+    <img
+      id="background-image"
+      src="Ecologically_grown_vegetables.jpg"
+      alt="Freshly harvested vegetabels in background of survey"
+    />
+    <div id="container">
+      <header>
+        <h1 id="title">Future Food Growers Survey Form</h1>
+        <p id="description">
+          <em>Your responses will help us make gardening accessible to all</em>
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="survey-item">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            class="text-input"
+            placeholder="Enter your name"
+            required
+            type="text"
+          />
+        </div>
+        <div class="survey-item">
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            placeholder="Enter your email"
+            required
+            type="email"
+            class="text-input"
+          />
+        </div>
+        <div class="survey-item">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input
+            class="text-input"
+            id="number"
+            min="0"
+            max="150"
+            placeholder="Enter your Age"
+            type="number"
+          />
+        </div>
+        <div class="survey-item">
+          <label for="dropdown"
+            >Which best describes your gardening experience level?</label
+          >
+          <select class="text-input" id="dropdown" name="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="Expert">Expert</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Novice">Novice</option>
+          </select>
+        </div>
+        <div class="survey-item">
+          <p>Which statement do you most agree with?</p>
+          <label for="food">
+            <input
+              class="input-radio"
+              id="food"
+              value="food"
+              name="motivation"
+              type="radio"
+            />
+            I would like to grow food that is delicous, healthy, and affordable.
+          </label>
+          <label for="environment">
+            <input
+              class="input-radio"
+              id="environment"
+              value="environment"
+              name="motivation"
+              type="radio"
+            />
+            I would like to grow plants and flowers that support a diverse range
+            of pollinators.
+          </label>
+          <label for="self">
+            <input
+              class="input-radio"
+              id="self"
+              value="self"
+              name="motivation"
+              type="radio"
+            />
+            I would like to grow a garden to experiece the awe, inner-peace and
+            satisfaction of understanding and engaging in my relationship with
+            nature.
+          </label>
+        </div>
+        <div class="survey-item" id="plant-prefference">
+          <p>What kinds of plants are you interested in growing?</p>
+          <label for="vegetables">
+            <input
+              class="input-checkbox"
+              id="vegetables"
+              value="vegetables"
+              name="plant-type"
+              type="checkbox"
+            />
+            Vegetables
+          </label>
+          <label for="fruits">
+            <input
+              class="input-checkbox"
+              id="fruits"
+              value="fruits"
+              name="plant-type"
+              type="checkbox"
+            />
+            Fruits
+          </label>
+          <label for="flowers">
+            <input
+              class="input-checkbox"
+              id="flowers"
+              value="flowers"
+              name="plant-type"
+              type="checkbox"
+            />
+            Flowers
+          </label>
+          <label for="trees">
+            <input
+              class="input-checkbox"
+              id="trees"
+              value="trees"
+              name="plant-type"
+              type="checkbox"
+            />
+            Trees and Bushes
+          </label>
+        </div>
+        <div class="survey-item">
+          <p>What might hold you back from starting your garden?</p>
+          <label for="time">
+            <input
+              class="input-checkbox"
+              id="time"
+              value="time"
+              name="barriers"
+              type="checkbox"
+            />
+            Not enough time
+          </label>
+          <label for="space">
+            <input
+              class="input-checkbox"
+              id="space"
+              value="space"
+              name="barriers"
+              type="checkbox"
+            />
+            Not enough space
+          </label>
+          <label for="money">
+            <input
+              class="input-checkbox"
+              id="money"
+              value="money"
+              name="barriers"
+              type="checkbox"
+            />
+            Not enough money
+          </label>
+        </div>
+        <div class="survey-item">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea
+            name="comments"
+            class="text-input"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="survey-item">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
