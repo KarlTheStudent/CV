@@ -1,0 +1,275 @@
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --bg-color: rgb(30, 30, 30);
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+    color: white;
+    background-color: var(--bg-color);
+    font-family: "Sedgwick Ave Display", cursive;
+    letter-spacing: 0.2rem;
+  }
+
+  #brand {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    height: fit-content;
+    align-items: baseline;
+  }
+
+  #brand-name {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  #competitions {
+    background-image: url(yoyo-contest.png);
+    background-size: cover;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #email {
+    width: 85vw;
+    max-width: 300px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #glove-link {
+    background-image: url(glove.jpg);
+    background-size: cover;
+  }
+
+  #header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+  }
+
+  #header-img {
+    display: flex;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  #link-list {
+    display: none;
+  }
+
+  main {
+    margin-top: 6rem;
+    background-color: var(--bg-color);
+  }
+
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #products a {
+    color: black;
+    margin: 0rem;
+    text-align: center;
+    width: 100vw;
+    height: 80vw;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px #ffffff, 2px -2px 5px #ffffff, -2px 2px 5px #ffffff,
+      -2px -2px 5px #ffffff, 2px 0px 5px #ffffff, 0px 2px 5px #ffffff,
+      -2px 0px 5px #ffffff, 0px -2px 5px #ffffff;
+  }
+
+  .product-pic,
+  #tutorials img,
+  #competitions img {
+    display: none;
+  }
+
+  #resources {
+    display: flex;
+  }
+
+  #string-link {
+    background-image: url(strings.jpg);
+    background-size: cover;
+  }
+
+  #submit {
+    width: 130px;
+  }
+
+  #tag-line {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #tutorials {
+    background-image: url(yoyotricks.png);
+    background-size: cover;
+    border-style: outset;
+  }
+
+  #video {
+    width: 100vw;
+  }
+
+  #yoyo-link {
+    background-image: url(yoyo-stack.jpg);
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  :root {
+    --bg-color: rgb(30, 30, 30);
+  }
+
+  body {
+    color: cornsilk;
+    background-color: var(--bg-color);
+  }
+  #brand {
+    display: flex;
+    margin-left: 30px;
+    height: fit-content;
+    align-items: baseline;
+  }
+
+  #brand-name {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #drop-img {
+    display: none;
+  }
+
+  #email {
+    width: 300px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+  }
+
+  #header-img {
+    display: flex;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+  }
+
+  #link-list {
+    display: flex;
+    width: 35vw;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  main {
+    margin-top: 6rem;
+    background-color: var(--bg-color);
+    height: 100rem;
+  }
+
+  a {
+    color: cornsilk;
+    text-decoration: none;
+  }
+
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #products a {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .product-pic {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .popup:hover {
+    transform: scale(1.02);
+  }
+
+  #resources {
+    display: flex;
+  }
+
+  #submit {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+    :root {
+        --bg-color: rgb(30, 30, 30);
+      }
+
+    main {
+        margin-top: 10rem;
+        background-color: var(--bg-color);
+      }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="purple-yoyo.png" />
+    <link rel="stylesheet" href="landing-page.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-family: 'Nothing You Could Do', cursive;
+        font-family: 'Sedgwick Ave Display', cursive;-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offstring Yoyos</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="brand">
+        <img id="header-img" src="yoyo-boy.png" alt="" />
+        <h1 id="brand-name">Offstring Yoyos</h1>
+      </div>
+      <nav id="nav-bar">
+        <ul id="link-list">
+          <a href="#products" class="nav-link"><li>Products</li></a>
+          <a href="#tutorials" class="nav-link"><li>Tutorials</li></a>
+          <a href="#competitions" class="nav-link"><li>Competitions</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="container">
+        <h2 id="tag-line">Yoyos like you have never seen them before!</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <input type="submit" id="submit" value="Go Stringless" />
+        </form>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/t5P-fdrlBg8?start=16"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div id="products">
+          <a id="yoyo-link" href="#">
+            <h3>Yoyos</h3>
+            <img
+              class="product-pic popup"
+              src="yoyo-stack.jpg"
+              alt="A pile of yoyos"
+            />
+          </a>
+          <a id="string-link" href="#">
+            <h3>Strings</h3>
+            <img
+              class="product-pic popup"
+              src="strings.jpg"
+              alt="yoyo strings"
+            />
+          </a>
+          <a id="glove-link" href="#">
+            <h3>Gloves</h3>
+            <img
+              class="product-pic popup"
+              src="glove.jpg"
+              alt="yoyo gloves covering only thumb pointer and middle finger"
+            />
+          </a>
+          <a
+            id="tutorials"
+            href="https://yoyotricks.com/yoyo-tricks/offstring-tricks/"
+          >
+            <h3>Tutorials</h3>
+            <img
+              class="popup"
+              src="yoyotricks.png"
+              alt="silouette of person doing yoyo tricks"
+            />
+          </a>
+          <a id="competitions" href="https://yoyocontest.com/">
+            <h3>Competitions</h3>
+            <img class="popup" src="yoyo-contest.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
