@@ -136,7 +136,7 @@
   #tutorials {
     background-image: url(yoyotricks.png);
     background-size: cover;
-    border-style: outset;
+    margin-bottom: 3px;
   }
 
   #video {
